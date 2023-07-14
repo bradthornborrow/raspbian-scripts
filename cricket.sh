@@ -9,7 +9,7 @@ dirname=`dirname "$0"`
 # dtoverlay=audremap,pins_18_19
 
 # Set volume to 75%
-amixer -M set Headphone 75% > /dev/null
+amixer -M set PCM 75% > /dev/null
 
 if [ $RANDOM -le 8192 ]; then
 	aplay $dirname/cricket.wav

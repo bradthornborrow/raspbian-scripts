@@ -21,11 +21,10 @@ MAILTO=brad.thornborrow@gmail.com
 # m h dom mon dow   command
 
 # Run Annoy-a-Tron script every 2 minutes
-*/2 * * * * /home/pi/scripts/cricket.sh >/dev/null 2>&1
+*/2 * * * * /home/pi/.local/bin/cricket.sh >/dev/null 2>&1
 
 # Reboot if network down
-*/10 * * * * /home/pi/scripts/check-lan.sh
+*/10 * * * * /home/pi/bin/check-lan.sh
 
 # Run Twitter motd_bot script daily at Midnight
-# 0 0 * * * . /home/pi/.profile; /home/pi/scripts/motd_bot.py
-
+# 0 0 * * * . /home/pi/.profile; /home/pi/bin/motd_bot.py
